@@ -1,0 +1,27 @@
+{
+  "name": "finsight_ai",
+  "version": "1.0.0",
+  "description": "Smart Finance Tracker Application",
+  "keywords": [
+    "Fintech",
+    "AI",
+    "GEMINI_API",
+    "Expenses",
+    "Income"
+  ],
+  "homepage": "https://github.com/shyam9493/FinSight_AI#readme",
+  "bugs": {
+    "url": "https://github.com/shyam9493/FinSight_AI/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shyam9493/FinSight_AI.git"
+  },
+  "license": "ISC",
+  "author": "Shyam Nandapuneedi",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
