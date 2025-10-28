@@ -4,7 +4,45 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>frontend</title>
+    <meta name="theme-color" content="#0f172a" />
+    <title>FinSight AI — Landing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+      // Initialize theme early to avoid flash
+      (function(){
+        try{
+          const theme = localStorage.getItem('theme');
+          if(theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)){
+            document.documentElement.classList.add('dark');
+          }
+        }catch(e){/* ignore */}
+      })();
+    </script>
+
+    <!-- Tailwind CSS via CDN (good for quick prototypes). Uses class-based dark mode -->
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'ui-sans-serif', 'system-ui'],
+            },
+            colors: {
+              brand: {
+                50: '#f5fbff',
+                100: '#e6f4ff',
+                500: '#0ea5a4',
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
     <div id="root"></div>
